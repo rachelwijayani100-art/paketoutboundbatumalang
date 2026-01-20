@@ -12,22 +12,24 @@
     
     <link rel="canonical" href="https://rachelwijayani100-art.github.io/paketoutboundbatumalang/">
     
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://images.unsplash.com">
 
-    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80">
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60&fm=webp" fetchpriority="high">
 
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <meta name="theme-color" content="#198754"> <meta property="og:type" content="website">
+    <meta name="theme-color" content="#198754">
+    
+    <meta property="og:type" content="website">
     <meta property="og:title" content="Batu Adventure - Paket Outbound & Gathering Terbaik">
     <meta property="og:description" content="Bangun kekompakan tim Anda dengan pengalaman petualangan seru di Kota Wisata Batu. Fasilitator bersertifikat & venue eksklusif.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=60&fm=webp">
     <meta property="og:url" content="https://rachelwijayani100-art.github.io/paketoutboundbatumalang/">
     <meta property="og:site_name" content="Batu Adventure">
 
@@ -37,7 +39,10 @@
     <meta name="twitter:image" content="https://images.unsplash.com/photo-1533587851505-d119e13fa0d7">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <script type="application/ld+json">
@@ -106,9 +111,9 @@
             font-family: 'Poppins', sans-serif;
         }
 
-        /* Hero Section Styling */
+        /* Hero Section Styling - OPTIMASI: WebP Format & Reduced Quality (q=60) & Darker Overlay for Contrast */
         .hero-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60&fm=webp');
             background-size: cover;
             background-position: center;
             height: 100vh;
@@ -143,7 +148,7 @@
 
         /* Back To Top Button */
         #btn-back-to-top {
-            display: none; /* Hidden by default */
+            display: none; 
             width: 50px;
             height: 50px;
             border-radius: 50%;
@@ -176,7 +181,6 @@
             box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
             text-decoration: none;
             transition: 0.3s;
-            /* Pulse Animation for CTA */
             animation: pulse-wa 2s infinite;
         }
         .floating-wa:hover {
@@ -200,7 +204,6 @@
             background-color: #f8f9fa;
         }
         
-        /* Mobile Responsive Adjustments */
         @media (max-width: 768px) {
             .display-3 { font-size: 2.5rem; }
             section { padding: 50px 0; }
@@ -213,6 +216,7 @@
             border-radius: 10px;
             cursor: pointer;
             height: 250px; 
+            background-color: #eee; /* Placeholder color */
         }
 
         .gallery-item img {
@@ -273,6 +277,7 @@
             position: relative;
             height: 200px;
             overflow: hidden;
+            background-color: #eee;
         }
 
         .blog-img-wrapper img {
@@ -298,7 +303,6 @@
             background-color: #d1e7dd !important; 
         }
         
-        /* Accordion Active State */
         .accordion-button:not(.collapsed) {
             background-color: #f0f0f0 !important; 
             color: #000000 !important;            
@@ -314,7 +318,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand fw-bold text-success" href="#"><i class="fa-solid fa-mountain-sun"></i> BATU ADVENTURE</a>
+            <a class="navbar-brand fw-bold text-success" href="#" aria-label="Batu Adventure Home"><i class="fa-solid fa-mountain-sun"></i> BATU ADVENTURE</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -349,7 +353,7 @@
                 
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="position-relative">
-                        <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="img-fluid rounded-4 shadow-lg" alt="Tim Outbound Batu Adventure" width="800" height="600" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60&fm=webp" class="img-fluid rounded-4 shadow-lg" alt="Tim Outbound Batu Adventure" width="800" height="600" loading="lazy">
                         
                         <div class="bg-success text-white p-4 rounded-3 position-absolute bottom-0 start-0 m-4 shadow border border-white border-2 d-none d-sm-block">
                             <h2 class="fw-bold m-0 display-4">8+</h2>
@@ -433,7 +437,7 @@
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="https://images.unsplash.com/photo-1526976668912-1a811878dd37?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Team Building Corporate" width="600" height="400" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1526976668912-1a811878dd37?auto=format&fit=crop&w=500&q=60&fm=webp" class="card-img-top" alt="Team Building Corporate" width="500" height="333" loading="lazy">
                         <div class="card-body">
                             <span class="badge bg-primary mb-2">Terlaris</span>
                             <h5 class="card-title fw-bold">Team Building Corporate</h5>
@@ -450,7 +454,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Adventure Rafting Batu" width="600" height="400" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?auto=format&fit=crop&w=500&q=60&fm=webp" class="card-img-top" alt="Adventure Rafting Batu" width="500" height="333" loading="lazy">
                         <div class="card-body">
                             <span class="badge bg-danger mb-2">Adrenaline</span>
                             <h5 class="card-title fw-bold">Adventure Rafting</h5>
@@ -467,7 +471,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Camping Gathering Batu" width="600" height="400" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&w=500&q=60&fm=webp" class="card-img-top" alt="Camping Gathering Batu" width="500" height="333" loading="lazy">
                         <div class="card-body">
                             <span class="badge bg-warning text-dark mb-2">2 Hari 1 Malam</span>
                             <h5 class="card-title fw-bold">Camp & Gathering</h5>
@@ -495,10 +499,9 @@
             </div>
 
             <div class="row g-3">
-                
                 <div class="col-lg-4 col-md-6">
                     <div class="gallery-item shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?auto=format&fit=crop&w=600&q=80" alt="Rafting Batu Malang" width="600" height="400" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?auto=format&fit=crop&w=600&q=60&fm=webp" alt="Rafting Batu Malang" width="600" height="400" loading="lazy">
                         <div class="gallery-overlay">
                             <div class="gallery-text">Rafting Adventure</div>
                         </div>
@@ -507,7 +510,7 @@
 
                 <div class="col-lg-4 col-md-6">
                     <div class="gallery-item shadow-sm">
-                        <img src="img/paintball1.webp" alt="Paintball War Game" width="600" height="400" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1555530756-11b225916964?auto=format&fit=crop&w=600&q=80'">
+                        <img src="img/paintball1.webp" alt="Paintball War Game" width="600" height="400" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1555530756-11b225916964?auto=format&fit=crop&w=600&q=60&fm=webp'">
                         <div class="gallery-overlay">
                             <div class="gallery-text">Paintball War</div>
                         </div>
@@ -516,7 +519,7 @@
 
                 <div class="col-lg-4 col-md-6">
                     <div class="gallery-item shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=600&q=80" alt="Fun Games Gathering" width="600" height="400" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=600&q=60&fm=webp" alt="Fun Games Gathering" width="600" height="400" loading="lazy">
                         <div class="gallery-overlay">
                             <div class="gallery-text">Fun Gathering</div>
                         </div>
@@ -525,7 +528,7 @@
 
                 <div class="col-lg-4 col-md-6">
                     <div class="gallery-item shadow-sm">
-                        <img src="img/offroad.webp" alt="Offroad Jeep Batu" width="600" height="400" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=600&q=80'">
+                        <img src="img/offroad.webp" alt="Offroad Jeep Batu" width="600" height="400" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=600&q=60&fm=webp'">
                         <div class="gallery-overlay">
                             <div class="gallery-text">Offroad Jeep</div>
                         </div>
@@ -534,7 +537,7 @@
 
                 <div class="col-lg-4 col-md-6">
                     <div class="gallery-item shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&w=600&q=80" alt="Camping Api Unggun" width="600" height="400" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&w=600&q=60&fm=webp" alt="Camping Api Unggun" width="600" height="400" loading="lazy">
                         <div class="gallery-overlay">
                             <div class="gallery-text">Night Camping</div>
                         </div>
@@ -543,7 +546,7 @@
 
                 <div class="col-lg-4 col-md-6">
                     <div class="gallery-item shadow-sm">
-                        <img src="https://images.unsplash.com/photo-1526976668912-1a811878dd37?auto=format&fit=crop&w=600&q=80" alt="Leadership Training" width="600" height="400" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1526976668912-1a811878dd37?auto=format&fit=crop&w=600&q=60&fm=webp" alt="Leadership Training" width="600" height="400" loading="lazy">
                         <div class="gallery-overlay">
                             <div class="gallery-text">Team Building</div>
                         </div>
@@ -580,7 +583,7 @@
                                 "Acaranya pecah banget! Fasilitatornya gokil dan bisa membawa suasana jadi cair. Game leadership-nya sangat ngena buat tim kami. Makan siangnya juga enak!"
                             </p>
                             <div class="d-flex align-items-center mt-4">
-                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=100&q=80" class="rounded-circle me-3" width="50" height="50" alt="Budi Santoso" loading="lazy">
+                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=100&q=60&fm=webp" class="rounded-circle me-3" width="50" height="50" alt="Budi Santoso" loading="lazy">
                                 <div>
                                     <h6 class="fw-bold mb-0">Budi Santoso</h6>
                                     <small class="text-muted">HRD PT. Maju Jaya Abadi</small>
@@ -600,7 +603,7 @@
                                 "Gathering PKK se-kecamatan jadi super heboh. Lokasinya di Coban Talun bagus banget buat foto-foto. Pelayanannya ramah dan sabar banget ngadepin ibu-ibu."
                             </p>
                             <div class="d-flex align-items-center mt-4">
-                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" class="rounded-circle me-3" width="50" height="50" alt="Ibu Ratna Sari" loading="lazy">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=60&fm=webp" class="rounded-circle me-3" width="50" height="50" alt="Ibu Ratna Sari" loading="lazy">
                                 <div>
                                     <h6 class="fw-bold mb-0">Ibu Ratna Sari</h6>
                                     <small class="text-muted">Ketua Komunitas Srikandi</small>
@@ -620,7 +623,7 @@
                                 "Raftingnya seru parah! Safety-nya terjamin jadi nggak takut meskipun baru pertama kali coba. Recommended banget buat healing bareng temen kampus."
                             </p>
                             <div class="d-flex align-items-center mt-4">
-                                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=100&q=80" class="rounded-circle me-3" width="50" height="50" alt="Dimas Anggara" loading="lazy">
+                                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=100&q=60&fm=webp" class="rounded-circle me-3" width="50" height="50" alt="Dimas Anggara" loading="lazy">
                                 <div>
                                     <h6 class="fw-bold mb-0">Dimas Anggara</h6>
                                     <small class="text-muted">Ketua BEM Univ. Brawijaya</small>
@@ -740,7 +743,7 @@
                 <div class="col-md-4">
                     <div class="card blog-card h-100 shadow-sm">
                         <div class="blog-img-wrapper">
-                            <img src="img/outbound.jpg" class="card-img-top" alt="Tips Outbound Kantor" width="400" height="200" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=400&q=80'">
+                            <img src="img/outbound.jpg" class="card-img-top" alt="Tips Outbound Kantor" width="400" height="200" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=400&q=60&fm=webp'">
                             <span class="blog-category">Tips</span>
                         </div>
                         <div class="card-body">
@@ -759,7 +762,7 @@
                 <div class="col-md-4">
                     <div class="card blog-card h-100 shadow-sm">
                         <div class="blog-img-wrapper">
-                            <img src="img/coban talun.webp" class="card-img-top" alt="Review Lokasi Coban Talun" width="400" height="200" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=400&q=80'">
+                            <img src="img/coban talun.webp" class="card-img-top" alt="Review Lokasi Coban Talun" width="400" height="200" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=400&q=60&fm=webp'">
                             <span class="blog-category">Review</span>
                         </div>
                         <div class="card-body">
@@ -778,7 +781,7 @@
                 <div class="col-md-4">
                     <div class="card blog-card h-100 shadow-sm">
                         <div class="blog-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Promo Paket Gathering" width="400" height="200" loading="lazy">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=400&q=60&fm=webp" class="card-img-top" alt="Promo Paket Gathering" width="400" height="200" loading="lazy">
                             <span class="blog-category">Promo</span>
                         </div>
                         <div class="card-body">
@@ -910,7 +913,7 @@
         </a>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
     
     <script>
         function kirimPesanWA() {
